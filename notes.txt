@@ -1,0 +1,9 @@
+dotnet dev-certs https --trust 	- to generate cert for https
+dotnet run to build and host the app
+
+Main -> CreateHostBuilder
+Host.CreateDefaultBuilder().ConfigureWebHostDefaults()
+configure IWebHostEnvironment.WebRootFileProvider to include static web assets from projects referenced by the entry assembly during development
+Add entity class and Create a connection string
+Install dotnet tool install --global dotnet-ef --version 5.0.2
+dotnet ef migrations add initialcreate -o Data/Migrations
